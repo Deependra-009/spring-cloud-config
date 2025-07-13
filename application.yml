@@ -18,7 +18,8 @@ management:
 
 logging:
   level:
-    org.springframework.cloud.gateway: ALL
+    root: TRACE
+    com.shopping: TRACE
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
 
