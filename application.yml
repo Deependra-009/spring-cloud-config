@@ -17,9 +17,6 @@ management:
       show-details: always
 
 logging:
-  level:
-    root: TRACE
-    com.shopping: TRACE
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
 
